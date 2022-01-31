@@ -6,13 +6,58 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+	var anchoTerreno;
+	var largoTerreno;
+	var perimetroTerreno;
+
+	anchoTerreno = document.getElementById("txtIdAncho").value;
+	largoTerreno = document.getElementById("txtIdLargo").value;
+
+	anchoTerreno = parseInt(anchoTerreno);
+	largoTerreno = parseInt(largoTerreno);
+
+	perimetroTerreno = largoTerreno*2;
+	perimetroTerreno = perimetroTerreno + anchoTerreno*2;
+	perimetroTerreno = perimetroTerreno*3; //son tres alambres
+
+	alert("Se necesitan " + perimetroTerreno + "m de alambre.");
+
 
 }
+
 function Circulo () 
 {
+	var radioTerreno;
+	var pi;
+	var perimetroTerreno;
+
+	pi = Math.PI;
+
+	radioTerreno = document.getElementById("txtIdRadio").value;
+	radioTerreno = parseInt(radioTerreno);
+	perimetroTerreno = radioTerreno*2;
+	perimetroTerreno = perimetroTerreno*pi;
+	perimetroTerreno = perimetroTerreno*3 //son tres alambres
+	alert("Se necesitan " + perimetroTerreno + "m de alambre")
 	
 }
+
 function Materiales () 
 {
-	
+	var anchoTerreno;
+	var largoTerreno;
+	var areaTerreno;
+	var bolsaCemento;
+	var bolsaCal;
+
+	anchoTerreno = document.getElementById("txtIdAncho").value;
+	largoTerreno = document.getElementById("txtIdLargo").value;
+
+	areaTerreno = anchoTerreno*largoTerreno;
+
+	bolsaCemento = areaTerreno*2;
+	bolsaCal = areaTerreno*3;
+
+
+	alert("Se necesitan " + bolsaCemento + " bolsas de cemento y " + bolsaCal  + " bolsas de cal.");
 }
