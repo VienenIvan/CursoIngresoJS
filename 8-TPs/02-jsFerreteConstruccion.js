@@ -60,4 +60,6 @@ function Materiales ()
 
 
 	alert("Se necesitan " + bolsaCemento + " bolsas de cemento y " + bolsaCal  + " bolsas de cal.");
-}
+}			
+
+
