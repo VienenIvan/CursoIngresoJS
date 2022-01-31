@@ -12,7 +12,7 @@ function mostrar()
 
 	datoIngresado = prompt("Ingrese un dato:");
 
-	document.getElementById("txtIdNombre").value = datoIngresado
+	document.getElementById("txtIdNombre").value = datoIngresado;
 
 	alert(datoIngresado);
 }
