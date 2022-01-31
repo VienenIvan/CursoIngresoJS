@@ -14,3 +14,6 @@ function mostrar()
 	alert(nombreIngresado);
 }
 
+
+
+
