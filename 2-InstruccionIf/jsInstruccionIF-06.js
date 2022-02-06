@@ -1,8 +1,11 @@
+
+//Rudiferia Iván - DIV E
+//instruccion if 06
+
+	
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	
 
-
-
-}//FIN DE LA FUNCIÓN
+}

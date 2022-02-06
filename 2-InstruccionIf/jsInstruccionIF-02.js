@@ -1,7 +1,23 @@
+
+//Rudiferia Iván - DIV E
+//Instruccion if 02
+
+
+	var edadIngresada;
+	var mayorEdad;
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
-	
 
-}//FIN DE LA FUNCIÓN
+	edadIngresada = document.getElementById("txtIdEdad").value;
+	edadIngresada = parseInt(edadIngresada);
+
+	mayorEdad = edadIngresada >= 18;
+
+	if (mayorEdad) {
+
+		alert("La persona es mayor de edad.");
+
+	}
+
+}
