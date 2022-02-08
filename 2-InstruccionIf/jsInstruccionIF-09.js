@@ -1,6 +1,25 @@
+
+//Rudiferia Iván - DIV E
+//Instruccion if 09
+
+	var numeroRandom;
+
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	numeroRandom = Math.floor(Math.random() * (10 - 1 + 1) ) + 1;
 
-}//FIN DE LA FUNCIÓN
+	alert(numeroRandom);	
+
+}
+
+
+
+/*
+
+Math.floor redondea para abajo.
+
+Math.round redondea
+
+Math.ceil redondea para arriba
+
+*/
