@@ -1,12 +1,25 @@
 /*
+Rudiferia Iván DIV-E
+Iteracion While 05
+
 Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+'f' para femenino, 'm' para masculino.
+*/
+
+	var sexoIngresado;
+
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	sexoIngresado = prompt("Ingrese su sexo (f ó m): ");
+	sexoIngresado = sexoIngresado.toLowerCase();
 
+	while(sexoIngresado != "f" && sexoIngresado != "m")
+	{
+		alert("¡Valor incorrecto!");
+		sexoIngresado = prompt("Ingrese su sexo (f ó m): ");
 
+	}	
 
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	alert("¡Valor correcto!");
+	document.getElementById("txtIdSexo").value = ("Su sexo es: " + sexoIngresado);
+}

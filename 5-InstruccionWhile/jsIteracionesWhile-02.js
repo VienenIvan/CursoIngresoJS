@@ -1,10 +1,22 @@
 /*
+Rudiferia Iván DIV-E
+Iteracion While 01
+
 al presionar el botón mostrar 10 repeticiones 
-con números DESCENDENTES, desde el 10 al 1.*/
+con números DESCENDENTES, desde el 10 al 1.
+*/
+
+	var contador;
+
 function mostrar()
 {
-	var contador;
-	contador=0; 
-	alert('iteración while');
+	
+	contador = 10
 
-}//FIN DE LA FUNCIÓN
+	while(contador > 0)
+	{
+		console.log("Numero: " + contador);
+		contador = contador - 1;
+	}
+
+}

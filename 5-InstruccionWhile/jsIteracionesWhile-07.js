@@ -1,18 +1,27 @@
 /*
-Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
-e informar la suma acumulada y el promedio.
+Rudiferia Iván DIV-E
+Iteracion While 07
 */
-function mostrar()
-{
+
+	var numeroIngresado;
 	var contador;
 	var acumulador;
-	var respuesta;
-	contador=0;
-	acumulador=0;
-	respuesta='si';
 
+function mostrar()
+{
+	contador = 0;
+	acumulador = 0
 
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
+	while(contador < 5)
+	{
+		numeroIngresado = parseInt(prompt("Ingrese un numero: "));
 
-}//FIN DE LA FUNCIÓN
+		acumulador = acumulador + numeroIngresado;
+		contador = contador + 1;
+
+	}
+
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = acumulador / 5;	
+
+}
