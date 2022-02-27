@@ -16,5 +16,6 @@ c) Cuántas unidades de Barbijos se compraron en total
 function mostrar()
 {
 
+
 	
 }
